@@ -1,0 +1,25 @@
+import java.util.*;
+class Program{
+    public static void main(String[] args){
+        Scanner in=new Scanner(System.in);
+        int n=in.nextInt();
+        List<Integer> l =new ArrayList<Integer>();
+        for(int i=0;i<n;i++){
+            l.add(in.nextInt());
+        }
+        int i=0;
+        int j=0;
+        while(i!=n){
+            if(l.get(j)<0){
+                int k=l.remove(j);
+                l.add(k);
+            }
+            if(l.get(j)>0){
+                j++;
+                continue;
+            }
+            i++;
+        }
+        System.out.println(l);
+    }
+}

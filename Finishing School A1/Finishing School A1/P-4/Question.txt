@@ -1,0 +1,11 @@
+Bahubali is training Devasena in archery. He teaches her to a trick with which 
+she is able hit multiple targets, provided they are all in a straight line. 
+Given a list of targets as points in the form of cartesian coordinate system, 
+return true if Devasena is able to hit all the targets with an arrow, else 
+return false.
+
+Input: 3
+2 3
+4 5
+6 7
+Output: true
